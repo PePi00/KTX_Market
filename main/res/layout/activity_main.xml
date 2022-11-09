@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/back_btn_tb"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:navigationIcon="@drawable/top_btn_back" />
+
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanscjkkr_regular"
+        android:letterSpacing="-0.03"
+        android:text=""
+        android:textColor="#2d2d2d"
+        android:textSize="19.2sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageButton
+        android:id="@+id/tab_drink"
+        android:layout_width="548dp"
+        android:layout_height="65dp"
+        android:background="@drawable/order_tab_01_sel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
+
+
+    <ImageButton
+        android:id="@+id/tab_snack"
+        android:layout_width="548dp"
+        android:layout_height="65dp"
+        android:background="@drawable/order_tab_02_sel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tab_drink"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <ImageButton
+        android:id="@+id/home_btn"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/top_btn_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+    <ScrollView
+        android:id="@+id/sclview"
+        android:layout_width="1097dp"
+        android:layout_height="295dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_drink"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/drink_view"
+            android:layout_width="1097dp"
+            android:layout_height="295dp"
+            android:orientation="horizontal">
+
+
+            <View
+                android:id="@+id/drinkW"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkW"
+                app:layout_constraintEnd_toEndOf="@+id/drinkW"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/drinkW"
+                app:layout_constraintTop_toTopOf="@+id/drinkW"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_bv_02" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="식후비법 더블유"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/drinkW"
+                app:layout_constraintHorizontal_bias="0.716"
+                app:layout_constraintStart_toStartOf="@+id/drinkW"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/asdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="1,200원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkW"
+                app:layout_constraintEnd_toEndOf="@+id/drinkW"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/drinkW"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <View
+                android:id="@+id/drinkBlackBori"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/drinkW"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imagebb"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkBlackBori"
+                app:layout_constraintEnd_toEndOf="@+id/drinkBlackBori"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/drinkBlackBori"
+                app:layout_constraintTop_toTopOf="@+id/drinkBlackBori"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_bv_01" />
+
+            <TextView
+                android:id="@+id/textbb"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="블랙보리"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/drinkBlackBori"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/drinkBlackBori"
+                app:layout_constraintTop_toBottomOf="@+id/imagebb"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="1,500원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkBlackBori"
+                app:layout_constraintEnd_toEndOf="@+id/drinkBlackBori"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/drinkBlackBori"
+                app:layout_constraintTop_toBottomOf="@+id/textbb"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/drinkKakao"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/drinkW"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imagekk"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkKakao"
+                app:layout_constraintEnd_toEndOf="@+id/drinkKakao"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/drinkKakao"
+                app:layout_constraintTop_toTopOf="@+id/drinkKakao"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_bv_10" />
+
+            <TextView
+                android:id="@+id/textkk"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="카카오닙스차"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/drinkKakao"
+                app:layout_constraintHorizontal_bias="0.802"
+                app:layout_constraintStart_toStartOf="@+id/drinkKakao"
+                app:layout_constraintTop_toBottomOf="@+id/imagekk"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txtkk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="1,800원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkKakao"
+                app:layout_constraintEnd_toEndOf="@+id/drinkKakao"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/drinkKakao"
+                app:layout_constraintTop_toBottomOf="@+id/textkk"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/drinkSkyBori"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="324dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/drinkBlackBori"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imagesb"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkSkyBori"
+                app:layout_constraintEnd_toEndOf="@+id/drinkSkyBori"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/drinkSkyBori"
+                app:layout_constraintTop_toTopOf="@+id/drinkSkyBori"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_bv_03" />
+
+            <TextView
+                android:id="@+id/txtsb"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="하늘보리"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/drinkSkyBori"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/drinkSkyBori"
+                app:layout_constraintTop_toBottomOf="@+id/imagesb"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textsb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="1,200원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkSkyBori"
+                app:layout_constraintEnd_toEndOf="@+id/drinkSkyBori"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/drinkSkyBori"
+                app:layout_constraintTop_toBottomOf="@+id/txtsb"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/drinkCola"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/drinkSkyBori"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imagecc"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkCola"
+                app:layout_constraintEnd_toEndOf="@+id/drinkCola"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/drinkCola"
+                app:layout_constraintTop_toTopOf="@+id/drinkCola"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_bv_04" />
+
+            <TextView
+                android:id="@+id/txtcc"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="코카콜라"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/drinkCola"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/drinkCola"
+                app:layout_constraintTop_toBottomOf="@+id/imagecc"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,000원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkCola"
+                app:layout_constraintEnd_toEndOf="@+id/drinkCola"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/drinkCola"
+                app:layout_constraintTop_toBottomOf="@+id/txtcc"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/drinkCider"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toEndOf="@+id/drinkCola"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imagecd"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkCider"
+                app:layout_constraintEnd_toEndOf="@+id/drinkCider"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/drinkCider"
+                app:layout_constraintTop_toTopOf="@+id/drinkCider"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_bv_05" />
+
+            <TextView
+                android:id="@+id/txtcd"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="칠성사이다"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/drinkCider"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="@+id/drinkCider"
+                app:layout_constraintTop_toBottomOf="@+id/imagecd"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textcd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="1,800원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkCider"
+                app:layout_constraintEnd_toEndOf="@+id/drinkCider"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/drinkCider"
+                app:layout_constraintTop_toBottomOf="@+id/txtcd"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/drinkHibiscus"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="456dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/drinkKakao"
+                app:layout_constraintTop_toBottomOf="@+id/drinkBlackBori" />
+
+            <ImageView
+                android:id="@+id/imagehb"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkHibiscus"
+                app:layout_constraintEnd_toEndOf="@+id/drinkHibiscus"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/drinkHibiscus"
+                app:layout_constraintTop_toTopOf="@+id/drinkHibiscus"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_bv_09" />
+
+            <TextView
+                android:id="@+id/txthb"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="히비스커스"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/drinkHibiscus"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="@+id/drinkHibiscus"
+                app:layout_constraintTop_toBottomOf="@+id/imagehb"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/texthb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="1,500원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkHibiscus"
+                app:layout_constraintEnd_toEndOf="@+id/drinkHibiscus"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/drinkHibiscus"
+                app:layout_constraintTop_toBottomOf="@+id/txthb"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/drinkHong"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="356dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/drinkHibiscus"
+                app:layout_constraintTop_toBottomOf="@+id/drinkSkyBori"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageh"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkHong"
+                app:layout_constraintEnd_toEndOf="@+id/drinkHong"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/drinkHong"
+                app:layout_constraintTop_toTopOf="@+id/drinkHong"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_bv_08" />
+
+            <TextView
+                android:id="@+id/txth"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="홍도라지차"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/drinkHong"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="@+id/drinkHong"
+                app:layout_constraintTop_toBottomOf="@+id/imageh"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/texth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,000원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkHong"
+                app:layout_constraintEnd_toEndOf="@+id/drinkHong"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/drinkHong"
+                app:layout_constraintTop_toBottomOf="@+id/txth"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/drinkFantaPine"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/drinkHong"
+                app:layout_constraintTop_toBottomOf="@+id/drinkCola"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imagefp"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkFantaPine"
+                app:layout_constraintEnd_toEndOf="@+id/drinkFantaPine"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/drinkFantaPine"
+                app:layout_constraintTop_toTopOf="@+id/drinkFantaPine"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_bv_07" />
+
+            <TextView
+                android:id="@+id/txtfp"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="파인애플 환타"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/drinkFantaPine"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="@+id/drinkFantaPine"
+                app:layout_constraintTop_toBottomOf="@+id/imagefp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textfp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,000원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkFantaPine"
+                app:layout_constraintEnd_toEndOf="@+id/drinkFantaPine"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/drinkFantaPine"
+                app:layout_constraintTop_toBottomOf="@+id/txtfp"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/drinkPororo"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/drinkFantaPine"
+                app:layout_constraintTop_toBottomOf="@+id/drinkCider" />
+
+            <ImageView
+                android:id="@+id/imagepr"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkPororo"
+                app:layout_constraintEnd_toEndOf="@+id/drinkPororo"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/drinkPororo"
+                app:layout_constraintTop_toTopOf="@+id/drinkPororo"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_bv_06" />
+
+            <TextView
+                android:id="@+id/txtpr"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="뽀로로"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/drinkPororo"
+                app:layout_constraintHorizontal_bias="1.1"
+                app:layout_constraintStart_toStartOf="@+id/drinkPororo"
+                app:layout_constraintTop_toBottomOf="@+id/imagepr"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textpr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,500원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/drinkPororo"
+                app:layout_constraintEnd_toEndOf="@+id/drinkPororo"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/drinkPororo"
+                app:layout_constraintTop_toBottomOf="@+id/txtpr"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sclview_snack"
+        android:layout_width="1097dp"
+        android:layout_height="295dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_drink"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/snack_view"
+            android:layout_width="1097dp"
+            android:layout_height="295dp"
+            android:orientation="horizontal">
+
+
+            <View
+                android:id="@+id/mapleCorn"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imgmp"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mapleCorn"
+                app:layout_constraintEnd_toEndOf="@+id/mapleCorn"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/mapleCorn"
+                app:layout_constraintTop_toTopOf="@+id/mapleCorn"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_01" />
+
+            <TextView
+                android:id="@+id/mc"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="메이플 콘"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/mapleCorn"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/mapleCorn"
+                app:layout_constraintTop_toBottomOf="@+id/imgmp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/paymp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="1,200원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/mapleCorn"
+                app:layout_constraintEnd_toEndOf="@+id/mapleCorn"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/mapleCorn"
+                app:layout_constraintTop_toBottomOf="@+id/mc"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <View
+                android:id="@+id/CaramelCorn"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="540dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/mapleCorn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imgcarc"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/CaramelCorn"
+                app:layout_constraintEnd_toEndOf="@+id/CaramelCorn"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/CaramelCorn"
+                app:layout_constraintTop_toTopOf="@+id/CaramelCorn"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_02" />
+
+            <TextView
+                android:id="@+id/carc"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="카라멜콘 땅콩"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/CaramelCorn"
+                app:layout_constraintHorizontal_bias="0.82"
+                app:layout_constraintStart_toStartOf="@+id/CaramelCorn"
+                app:layout_constraintTop_toBottomOf="@+id/imgcarc"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="1,500원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/CaramelCorn"
+                app:layout_constraintEnd_toEndOf="@+id/CaramelCorn"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/CaramelCorn"
+                app:layout_constraintTop_toBottomOf="@+id/carc"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/vgtime"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paymp" />
+
+            <ImageView
+                android:id="@+id/imgvt"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/vgtime"
+                app:layout_constraintEnd_toEndOf="@+id/vgtime"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/vgtime"
+                app:layout_constraintTop_toTopOf="@+id/vgtime"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_06" />
+
+            <TextView
+                android:id="@+id/txtvt"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="야채타임"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/vgtime"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/vgtime"
+                app:layout_constraintTop_toBottomOf="@+id/imgvt"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="1,800원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/vgtime"
+                app:layout_constraintEnd_toEndOf="@+id/vgtime"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/vgtime"
+                app:layout_constraintTop_toBottomOf="@+id/txtvt"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/churros"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="368dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/CaramelCorn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imgcrs"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/churros"
+                app:layout_constraintEnd_toEndOf="@+id/churros"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/churros"
+                app:layout_constraintTop_toTopOf="@+id/churros"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_03" />
+
+            <TextView
+                android:id="@+id/txtcrs"
+                android:layout_width="123dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="츄러스"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/churros"
+                app:layout_constraintHorizontal_bias="0.917"
+                app:layout_constraintStart_toStartOf="@+id/churros"
+                app:layout_constraintTop_toBottomOf="@+id/imgcrs"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="1,200원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/churros"
+                app:layout_constraintEnd_toEndOf="@+id/churros"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/churros"
+                app:layout_constraintTop_toBottomOf="@+id/txtcrs"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/pong"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="136dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/churros"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imgpong"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/pong"
+                app:layout_constraintEnd_toEndOf="@+id/pong"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/pong"
+                app:layout_constraintTop_toTopOf="@+id/pong"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_04" />
+
+            <TextView
+                android:id="@+id/txtpo"
+                android:layout_width="114dp"
+                android:layout_height="36dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="죠리퐁"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/pong"
+                app:layout_constraintHorizontal_bias="0.847"
+                app:layout_constraintStart_toStartOf="@+id/pong"
+                app:layout_constraintTop_toBottomOf="@+id/imgpong"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,000원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/pong"
+                app:layout_constraintEnd_toEndOf="@+id/pong"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/pong"
+                app:layout_constraintTop_toBottomOf="@+id/txtpo"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/sinjjang"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pong"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imagesj"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/sinjjang"
+                app:layout_constraintEnd_toEndOf="@+id/sinjjang"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/sinjjang"
+                app:layout_constraintTop_toTopOf="@+id/sinjjang"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_05" />
+
+            <TextView
+                android:id="@+id/txtsj"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="크레옹 신짱"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/sinjjang"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="@+id/sinjjang"
+                app:layout_constraintTop_toBottomOf="@+id/imagesj"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="1,800원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/sinjjang"
+                app:layout_constraintEnd_toEndOf="@+id/sinjjang"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/sinjjang"
+                app:layout_constraintTop_toBottomOf="@+id/txtsj"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/crab"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintStart_toEndOf="@+id/vgtime"
+                app:layout_constraintTop_toBottomOf="@+id/CaramelCorn" />
+
+            <ImageView
+                android:id="@+id/imgcr"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/crab"
+                app:layout_constraintEnd_toEndOf="@+id/crab"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/crab"
+                app:layout_constraintTop_toTopOf="@+id/crab"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_07" />
+
+            <TextView
+                android:id="@+id/txtcr"
+                android:layout_width="123dp"
+                android:layout_height="34dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="꽃게랑"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/crab"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="@+id/crab"
+                app:layout_constraintTop_toBottomOf="@+id/imgcr"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="1,500원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/crab"
+                app:layout_constraintEnd_toEndOf="@+id/crab"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/crab"
+                app:layout_constraintTop_toBottomOf="@+id/txtcr"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/sindangtteokbokki"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vgtime" />
+
+            <ImageView
+                android:id="@+id/imagetbk"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/sindangtteokbokki"
+                app:layout_constraintEnd_toEndOf="@+id/sindangtteokbokki"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/sindangtteokbokki"
+                app:layout_constraintTop_toTopOf="@+id/sindangtteokbokki"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_11" />
+
+            <TextView
+                android:id="@+id/texttbk"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="신당동 떡볶이"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/sindangtteokbokki"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintStart_toStartOf="@+id/sindangtteokbokki"
+                app:layout_constraintTop_toBottomOf="@+id/imagetbk"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,000원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/sindangtteokbokki"
+                app:layout_constraintEnd_toEndOf="@+id/sindangtteokbokki"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/sindangtteokbokki"
+                app:layout_constraintTop_toBottomOf="@+id/texttbk"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/honeybutter"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintStart_toEndOf="@+id/whale"
+                app:layout_constraintTop_toBottomOf="@+id/pong" />
+
+            <ImageView
+                android:id="@+id/imagehob"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/honeybutter"
+                app:layout_constraintEnd_toEndOf="@+id/honeybutter"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/honeybutter"
+                app:layout_constraintTop_toTopOf="@+id/honeybutter"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_09" />
+
+            <TextView
+                android:id="@+id/texthob"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="허니버터칩"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/honeybutter"
+                app:layout_constraintHorizontal_bias="0.92"
+                app:layout_constraintStart_toStartOf="@+id/honeybutter"
+                app:layout_constraintTop_toBottomOf="@+id/imagehob"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,000원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/honeybutter"
+                app:layout_constraintEnd_toEndOf="@+id/honeybutter"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/honeybutter"
+                app:layout_constraintTop_toBottomOf="@+id/texthob"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/jagabe"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/honeybutter"
+                app:layout_constraintTop_toBottomOf="@+id/sinjjang" />
+
+            <ImageView
+                android:id="@+id/imagejgb"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/jagabe"
+                app:layout_constraintEnd_toEndOf="@+id/jagabe"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/jagabe"
+                app:layout_constraintTop_toTopOf="@+id/jagabe"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_10" />
+
+            <TextView
+                android:id="@+id/textjgb"
+                android:layout_width="116dp"
+                android:layout_height="33dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="자가비"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/jagabe"
+                app:layout_constraintHorizontal_bias="0.846"
+                app:layout_constraintStart_toStartOf="@+id/jagabe"
+                app:layout_constraintTop_toBottomOf="@+id/imagejgb"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,000원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/jagabe"
+                app:layout_constraintEnd_toEndOf="@+id/jagabe"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/jagabe"
+                app:layout_constraintTop_toBottomOf="@+id/textjgb"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/whale"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintStart_toEndOf="@+id/crab"
+                app:layout_constraintTop_toBottomOf="@+id/churros" />
+
+            <ImageView
+                android:id="@+id/imagewh"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/whale"
+                app:layout_constraintEnd_toEndOf="@+id/whale"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/whale"
+                app:layout_constraintTop_toTopOf="@+id/whale"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_08" />
+
+            <TextView
+                android:id="@+id/textwh"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="고래밥"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/whale"
+                app:layout_constraintHorizontal_bias="1.1"
+                app:layout_constraintStart_toStartOf="@+id/whale"
+                app:layout_constraintTop_toBottomOf="@+id/imagewh"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,500원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/whale"
+                app:layout_constraintEnd_toEndOf="@+id/whale"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/whale"
+                app:layout_constraintTop_toBottomOf="@+id/textwh"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/sweetpotatoSnack"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintStart_toEndOf="@+id/sindangtteokbokki"
+                app:layout_constraintTop_toBottomOf="@+id/crab" />
+
+            <ImageView
+                android:id="@+id/imagesps"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/sweetpotatoSnack"
+                app:layout_constraintEnd_toEndOf="@+id/sweetpotatoSnack"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/sweetpotatoSnack"
+                app:layout_constraintTop_toTopOf="@+id/sweetpotatoSnack"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_12" />
+
+            <TextView
+                android:id="@+id/textsps"
+                android:layout_width="128dp"
+                android:layout_height="36dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="오사쯔"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/sweetpotatoSnack"
+                app:layout_constraintHorizontal_bias="0.956"
+                app:layout_constraintStart_toStartOf="@+id/sweetpotatoSnack"
+                app:layout_constraintTop_toBottomOf="@+id/imagesps"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,000원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/sweetpotatoSnack"
+                app:layout_constraintEnd_toEndOf="@+id/sweetpotatoSnack"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/sweetpotatoSnack"
+                app:layout_constraintTop_toBottomOf="@+id/textsps"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/ShrimpSnack"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintStart_toEndOf="@+id/textsps"
+                app:layout_constraintTop_toBottomOf="@+id/whale" />
+
+            <View
+                android:id="@+id/shrimpSnack"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintStart_toEndOf="@+id/textsps"
+                app:layout_constraintTop_toBottomOf="@+id/whale" />
+
+            <ImageView
+                android:id="@+id/imagess"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ShrimpSnack"
+                app:layout_constraintEnd_toEndOf="@+id/ShrimpSnack"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/ShrimpSnack"
+                app:layout_constraintTop_toTopOf="@+id/ShrimpSnack"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_13" />
+
+            <TextView
+                android:id="@+id/textss"
+                android:layout_width="128dp"
+                android:layout_height="36dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="빠삭한 새우칩"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ShrimpSnack"
+                app:layout_constraintHorizontal_bias="0.728"
+                app:layout_constraintStart_toStartOf="@+id/ShrimpSnack"
+                app:layout_constraintTop_toBottomOf="@+id/imagess"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,000원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/ShrimpSnack"
+                app:layout_constraintEnd_toEndOf="@+id/ShrimpSnack"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/ShrimpSnack"
+                app:layout_constraintTop_toBottomOf="@+id/textss"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/concheese"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sindangtteokbokki" />
+
+            <ImageView
+                android:id="@+id/imagechs"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/concheese"
+                app:layout_constraintEnd_toEndOf="@+id/concheese"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/concheese"
+                app:layout_constraintTop_toTopOf="@+id/concheese"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_16" />
+
+            <TextView
+                android:id="@+id/textchs"
+                android:layout_width="104dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="콘치"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/concheese"
+                app:layout_constraintHorizontal_bias="0.836"
+                app:layout_constraintStart_toStartOf="@+id/concheese"
+                app:layout_constraintTop_toBottomOf="@+id/imagechs"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,000원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/concheese"
+                app:layout_constraintEnd_toEndOf="@+id/concheese"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/concheese"
+                app:layout_constraintTop_toBottomOf="@+id/textchs"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/bakedOnion"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintStart_toEndOf="@+id/ShrimpSnack"
+                app:layout_constraintTop_toBottomOf="@+id/honeybutter" />
+
+            <ImageView
+                android:id="@+id/imagebo"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/bakedOnion"
+                app:layout_constraintEnd_toEndOf="@+id/bakedOnion"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/bakedOnion"
+                app:layout_constraintTop_toTopOf="@+id/bakedOnion"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_14" />
+
+            <TextView
+                android:id="@+id/textbo"
+                android:layout_width="128dp"
+                android:layout_height="36dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="구운양파"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/bakedOnion"
+                app:layout_constraintHorizontal_bias="0.890"
+                app:layout_constraintStart_toStartOf="@+id/bakedOnion"
+                app:layout_constraintTop_toBottomOf="@+id/imagebo"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,000원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/bakedOnion"
+                app:layout_constraintEnd_toEndOf="@+id/bakedOnion"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/bakedOnion"
+                app:layout_constraintTop_toBottomOf="@+id/textbo"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/cornChip"
+                android:layout_width="219.4dp"
+                android:layout_height="200dp"
+                android:background="@drawable/view_line"
+                app:layout_constraintStart_toEndOf="@+id/bakedOnion"
+                app:layout_constraintTop_toBottomOf="@+id/jagabe" />
+
+            <ImageView
+                android:id="@+id/imagecoc"
+                android:layout_width="119dp"
+                android:layout_height="107dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cornChip"
+                app:layout_constraintEnd_toEndOf="@+id/cornChip"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="@+id/cornChip"
+                app:layout_constraintTop_toTopOf="@+id/cornChip"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/order_sn_15" />
+
+            <TextView
+                android:id="@+id/textcoc"
+                android:layout_width="106dp"
+                android:layout_height="44dp"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:text="콘칩"
+                android:textColor="#2B2929"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cornChip"
+                app:layout_constraintHorizontal_bias="0.831"
+                app:layout_constraintStart_toStartOf="@+id/cornChip"
+                app:layout_constraintTop_toBottomOf="@+id/imagecoc"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:text="2,000원"
+                android:textColor="#038CF4"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/cornChip"
+                app:layout_constraintEnd_toEndOf="@+id/cornChip"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/cornChip"
+                app:layout_constraintTop_toBottomOf="@+id/textcoc"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/viewBottomBar"
+        android:layout_width="1105dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sclview"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1103dp"
+        android:layout_height="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBottomBar"
+        app:layout_constraintEnd_toEndOf="@+id/viewBottomBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/viewBottomBar"
+        app:layout_constraintTop_toTopOf="@+id/viewBottomBar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/set_bar_blue" />
+
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBottomBar"
+        app:layout_constraintEnd_toEndOf="@+id/viewBottomBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/viewBottomBar"
+        app:layout_constraintTop_toTopOf="@+id/viewBottomBar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itemView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/itemlist"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/addCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBottomBar"
+        app:layout_constraintEnd_toEndOf="@+id/viewBottomBar"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="@+id/viewBottomBar"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.778"
+        app:srcCompat="@drawable/order_btn_cart" />
+
+    <ImageButton
+        android:id="@+id/paybtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBottomBar"
+        app:layout_constraintEnd_toEndOf="@+id/viewBottomBar"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@+id/addCart"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.778"
+        app:srcCompat="@drawable/order_btn_pay" />
+
+    <TextView
+        android:id="@+id/totalPayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanscjkkr_regular"
+        android:text="총 결제금액"
+        android:textColor="#E8000000"
+        android:textSize="18.3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBottomBar"
+        app:layout_constraintEnd_toEndOf="@+id/viewBottomBar"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <TextView
+        android:id="@+id/totalPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:text=""
+        android:textColor="#A32A2A"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBottomBar"
+        app:layout_constraintEnd_toEndOf="@+id/viewBottomBar"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toEndOf="@+id/totalPayText"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
